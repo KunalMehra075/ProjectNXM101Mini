@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="/static/CSS\Commons.css" />
+    <link rel="stylesheet" href="/static/CSS/signup.css" />
+  </head>
+  <body>
+    <div id="bg"></div>
+  {{>navbar}}
+    <!--?--------------------------------------------- Main Body ----------------------------------------------->
+    <main>
+      <img src="/static/Images/team.gif" alt="" id="gif" />
+      <section id="mcontainer">
+        <div id="right">
+          <h1 id="signuphead">Sign up</h1>
+          <form action="">
+            <!-- username,email,dob,role,location,password,confirm password -->
+            <label for="">Enter User Name</label><br />
+            <input type="text" placeholder="Enter UserName" required /><br />
+            <label for="">Enter Email</label><br />
+            <input type="email" placeholder="Enter Email" required />
+            <br />
+            <label for="">Enter D.O.B</label><br />
+            <input type="date" placeholder="Enter D.O.B" required />
+            <br />
+            <label for="">Enter Role</label><br />
+            <select type="text" placeholder="Enter Role" required>
+              <option value="">Chose an option</option>
+              <option value="friend">Friend</option>
+              <option value="relative">Relative</option>
+              <option value="stranger">Stranger</option>
+            </select>
+            <br />
+            <label for="">Enter Location</label><br />
+            <input type="text" placeholder="Enter Location" required />
+            <br />
+            <label for="">Enter Password</label><br />
+            <input type="password" placeholder="Enter Password" required />
+            <br />
+            <label for="">Confirm Password</label><br />
+            <input
+              type="password"
+              placeholder="Enter password again"
+              required
+            />
+            <br />
+            <p id="checkbox">
+              <input type="checkbox" required />By clicking here, I state that I
+              have read and understood the terms and conditions.
+            </p>
+
+            <input class="bunten" type="submit" value="Sign Up" />
+            <br />
+            <br />
+            <center>OR</center>
+            <hr />
+            <br />
+            <button class="bunten" id="goog">
+              Continue with Google
+              <label style="color: white">-</label>
+              <img width="20px" src="/static/Images/goog.png" alt="" />
+            </button>
+          </form>
+        </div>
+      </section>
+      <div id="someTxt">
+        <h2>Hey User !</h2>
+        If you fill the details and click on Sign-in, your data will be send to
+        MongoDb Atlas Database.And then you can later edit your data also.
+      </div>
+    </main>
+    <!--?--------------------------------------------- Footer ----------------------------------------------->
+    <footer></footer>
+  </body>
+</html>
+<!-- <script src="index.js"></script> -->
+<!--??--------------------------------------------- <Bootstrap> ----------------------------------------------->
