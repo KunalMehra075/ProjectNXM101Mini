@@ -1,0 +1,40 @@
+#xcontainer {
+  margin: 0px !important;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#welcome {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  text-shadow: 3px 3px #010101;
+}
+#bg {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-image: url("../../Images/background.svg");
+  background-size: cover;
+  filter: brightness(0.9);
+}
+#subhead {
+  font-weight: 600;
+  font-size: 30px;
+  text-shadow: 1px 1px #0dc8a3;
+}
+#explore {
+  padding: 7px 48px;
+  background-color: transparent;
+  border: 3px solid white;
+  backdrop-filter: blur(1.2rem);
+  color: rgb(0, 0, 0);
+}
+#explore:hover {
+  box-shadow: none;
+  border: 3px solid rgb(107, 251, 215);
+}

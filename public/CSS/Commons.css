@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+}
+/* div {
+  border: 1px solid black;
+} */
+a {
+  text-decoration: none;
+  color: white;
+}
+#bg {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-image: url("../Images/background.svg");
+  background-size: cover;
+  filter: brightness(0.9);
+}
+.bunten {
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.bunten:hover {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.bg-body-tertiary {
+  padding: 0px;
+  background: rgb(9, 20, 16);
+  background: linear-gradient(
+    0deg,
+    rgba(70, 182, 176, 0.7) 0%,
+    rgb(63, 157, 122) 100%
+  ) !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-evenly !important;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px 40px;
+  color: white;
+  font-size: 20px;
+}
+.navbar-brand {
+  color: white;
+  font-size: 40px;
+  padding-left: 25px;
+  margin: 0px;
+}
