@@ -20,42 +20,50 @@
 
     <link rel="stylesheet" href="/static/CSS\Commons.css" />
     <link rel="stylesheet" href="/static/CSS/signup.css" />
+    {{>favicon}}
   </head>
   <body>
     <div id="bg"></div>
   {{>navbar}}
+ 
+
+  <div id="spinner" class="spinner-border text-light" role="status">
+
+</div>
+
+</div>
     <!--?--------------------------------------------- Main Body ----------------------------------------------->
     <main>
       <img src="/static/Images/team.gif" alt="" id="gif" />
       <section id="mcontainer">
         <div id="right">
           <h1 id="signuphead">Sign up</h1>
-          <form action="">
+          <form id="signup-form">
             <!-- username,email,dob,role,location,password,confirm password -->
             <label for="">Enter User Name</label><br />
-            <input type="text" placeholder="Enter UserName" required /><br />
+            <input type="text" id="name"placeholder="Enter UserName" required /><br />
             <label for="">Enter Email</label><br />
-            <input type="email" placeholder="Enter Email" required />
+            <input type="email" id="email" placeholder="Enter Email" required />
             <br />
             <label for="">Enter D.O.B</label><br />
-            <input type="date" placeholder="Enter D.O.B" required />
+            <input type="date" id="dob" placeholder="Enter D.O.B" required />
             <br />
             <label for="">Enter Role</label><br />
-            <select type="text" placeholder="Enter Role" required>
+            <select type="text" id="role" placeholder="Enter Role" required>
               <option value="">Chose an option</option>
-              <option value="friend">Friend</option>
-              <option value="relative">Relative</option>
-              <option value="stranger">Stranger</option>
+              <option value="admin">Admin</option>
+              <option value="explorer">Explorer</option>
             </select>
             <br />
             <label for="">Enter Location</label><br />
-            <input type="text" placeholder="Enter Location" required />
+            <input type="text" id="location" placeholder="Enter Location" required />
             <br />
             <label for="">Enter Password</label><br />
-            <input type="password" placeholder="Enter Password" required />
+            <input type="password" id="pass" placeholder="Enter Password" required />
             <br />
             <label for="">Confirm Password</label><br />
             <input
+            id="conf"
               type="password"
               placeholder="Enter password again"
               required
@@ -87,8 +95,10 @@
       </div>
     </main>
     <!--?--------------------------------------------- Footer ----------------------------------------------->
-    <footer></footer>
+       {{>footer}}
   </body>
 </html>
-<!-- <script src="index.js"></script> -->
+<script src="/static/JS/signup.js"></script> 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!--??--------------------------------------------- <Bootstrap> ----------------------------------------------->
+  

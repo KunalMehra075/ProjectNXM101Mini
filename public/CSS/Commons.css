@@ -7,9 +7,21 @@
 .flex {
   display: flex;
 }
+html {
+  position: relative;
+}
+body {
+  padding-bottom: 180px;
+}
 /* div {
   border: 1px solid black;
 } */
+#spinner {
+  display: none;
+  top: 100px;
+  left: 30px;
+  position: fixed;
+}
 a {
   text-decoration: none;
   color: white;
@@ -53,10 +65,44 @@ a {
   padding: 0px 40px;
   color: white;
   font-size: 20px;
+  transition: all 250ms ease;
 }
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  filter: invert();
+}
+
 .navbar-brand {
   color: white;
   font-size: 40px;
   padding-left: 25px;
   margin: 0px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 150px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footercenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerimgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+.footerimgs img {
+  width: 30px;
+  filter: invert();
 }

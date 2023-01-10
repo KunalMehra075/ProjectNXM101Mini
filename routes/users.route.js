@@ -25,7 +25,7 @@ usersRouter.post("/", async (req, res) => {
     const instance = new UsersModel(data);
     await instance.save();
     console.log(instance);
-    res.send("Added user Successfully");
+    res.send(instance);
   } catch (err) {
     console.log(err);
     res.send({ Error: err.message });
